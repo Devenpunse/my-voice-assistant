@@ -1,0 +1,69 @@
+CHARU PERSONAL VOICE ASSISTANT - HOW TO USE
+
+1. Open PowerShell in the project folder:
+   D:\projects\python\Jarvis-Desktop-Voice-Assistant
+
+2. Set up the Python environment (do this once):
+   python -m venv .venv
+   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+
+3. Start the app whenever you want to use it:
+   From the project folder, run:
+   .\.venv\Scripts\python.exe .\Jarvis\jarvis.py
+
+   If PowerShell is already open in the Jarvis subfolder, run:
+   ..\.venv\Scripts\python.exe .\jarvis.py
+
+   Leave the PowerShell window open while Charu is running. The animated Charu window
+   should appear. Allow microphone access if Windows asks.
+
+4. Wake Charu and give one request:
+   Charu recognizes and responds in English only. Speech recognition uses Google's
+   online service, so an internet connection is needed.
+
+   First say "Charu" and wait for Charu to say it is listening, then give one request.
+   You can also say "Charu, open YouTube" together as a single sentence.
+   - "Play a song", "play YouTube songs", or "play [song title] song"
+     Charu finds the top YouTube match, tells you its title and channel, and opens it in a
+     separate Edge playback window. If you did not say a title, Charu asks for one.
+   - Say "Charu, close" to close only the YouTube playback window opened by Charu. Other
+     browser windows, tabs, and apps are left alone.
+   - A small ambient-glow panel appears during playback. Say "Charu, light off" or press
+     OFF on the panel to close it. Say "Charu", then "light on" to show it again.
+   - "Open my laptop drive", "open this PC", or "show my drives"
+     Opens This PC in Windows File Explorer.
+   - Talk naturally to Charu for a short, warm companion response.
+   - Other available commands include "what time is it", "what is the date",
+     "open YouTube", "open Google", "search for GitHub", "open Google and search for GitHub",
+     "take a screenshot", and "Wikipedia [topic]".
+     To search while waking from standby, say "Charu, open Google and search for GitHub".
+   Say "Charu" again before each new request, or include it at the start of the request.
+
+5. Put Charu into standby:
+   Say "offline" or click Go offline. The window hides while Charu waits for the wake word.
+   Say "Charu" to wake it again.
+
+6. Exit Charu:
+   Say "exit" or click Exit. Closing the assistant window also exits the app.
+
+7. Optional: start Charu when you sign in to Windows:
+   Open PowerShell in the Jarvis subfolder:
+   cd D:\projects\python\Jarvis-Desktop-Voice-Assistant\Jarvis
+
+   If PowerShell blocks the script, allow scripts for this PowerShell window:
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+
+   Install the startup shortcut:
+   .\install_startup.ps1
+
+   To remove the startup shortcut later:
+   .\uninstall_startup.ps1
+
+   Startup runs Charu after you sign in; it cannot run while the laptop is shut down.
+
+
+steps
+
+.\.venv\Scripts\python.exe .\Jarvis\jarvis.py
+
+Charu
